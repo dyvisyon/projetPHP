@@ -7,7 +7,7 @@
 
 	<?php include "header.php"?>
 
-	
+	<h1>Story 3</h1>
 	<form method="post">
 	<?php 
 	require "utilities.php";
@@ -28,6 +28,22 @@
 
 	}
 
+
+	?>
+
+	<h1>Story 4</h1>
+	<form method="post">
+	<?php 
+
+	$form1 = new Form();
+	$form1->getInputTypeText("Date");
+	$form1->getSubmitButton("submit","Ok");
+
+	?>
+	</form>
+
+	<?php
+	$form1->afficheDate($_POST["Date"]);
 
 
 

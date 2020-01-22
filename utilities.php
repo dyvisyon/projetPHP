@@ -37,6 +37,23 @@ class Form{
         }
     }
 
+    public function afficheDate($temps){
+    
+
+    	$t1 = time();
+    	$t2 = $temps;
+
+    	if ($t2 < $t1) {
+    		$dateSnd = $t1 - $t2;
+    		echo "L'événement à eu lieu le ".date("l j F Y",($dateSnd));
+    	}
+    	
+
+
+    }
+
+
+
 
 }
 	/*
