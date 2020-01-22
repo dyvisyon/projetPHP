@@ -44,11 +44,20 @@
 
 	<?php
 	$form1->afficheDate($_POST["Date"]);
-
-
-
-
 	?>
+
+	<h1>Story 5</h1>
+	<form method="post">
+    <?php
+    $form1->getInputTypeText("Croissant");
+	$form1->getSubmitButton("submit","Ok");
+    ?>
+    </form>
+    <?php
+    if (sizeof($_POST)>0){
+        $form1->affichePetitNombre($_POST["Croissant"]);
+    }
+    ?>
 
 
 
