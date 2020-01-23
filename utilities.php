@@ -116,6 +116,37 @@ class Form{
         echo "voici la convertion en Binaire de :".$case1;
     }
 
+    public function getInputTypeEmail($value){
+        
+       
+        echo '<label for="'.$value.'">'.$value.'</label>:<br>';
+        echo'<input type="text" id="'.$value.'" name="'.$value.'">';
+                
+    }
+    
+    public function GetVerifyMail($valeur){
+        if(preg_match('/.*[@].*\..*/', $valeur) && (strlen($valeur)>3)){
+            echo "adresse mail valide";
+        } else {
+            echo "adresse mail invalide";
+        }
+    
+        
+        
+    }
+
+
+
+// on split
+
+
+    //on ajoute a une liste
+
+
+    //on prend les mots de la liste pour les mettre dans une autre list
+
+
+    //on print la liste
 
 
 

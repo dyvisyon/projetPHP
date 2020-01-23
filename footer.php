@@ -1,5 +1,5 @@
-<footer>	
+<footer id="corps">	
 	<div id="footer">
-		<p style="text-align: center">Ceci est un footer</p>	
+		<p style="text-align: center">Equipe Jeremy, Hugo, Kévin</p>	
 	</div>
 </footer>
