@@ -51,9 +51,6 @@ class Form{
     		$dateSnd = $t1 - $t2;
     		echo "L'événement à eu lieu le ".date("l j F Y",($dateSnd));
     	}
-    	
-
-
     }
 
     // Affiche le nombre le plus petit parmis plusieurs entrées dans la texte field
@@ -71,6 +68,68 @@ class Form{
         }
         echo "Le nombres le plus petit est : " . $pluspetit;
 	}
+
+
+	public function factor($myNumber1){
+    	$result = 1;
+    	for($myNumber1; $myNumber1 >= 1; $myNumber1--){
+        	$result *= $myNumber1;
+    	}
+    	echo "La factorielle est :".$result;
+ 	}
+
+ 	public function getRomanNumber($number){
+	    $basicRomanNumbers = array( 'M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I');
+	    $basicNumbers = array( 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1);
+	    // Un nombre au dessus de 4999 ne pourra pas être écrit.
+	    if ($number > 4999) $number = 4999;
+	    // Le zero n'existant pas. si l'entrée est égale à 0 il sera traduit en 1.
+	    if ($number <= 0) $number = 1;
+	    // Les Nombre seront arrondis
+	    $number = (int) $number;
+	    // initialisation de la boucle de variable
+	    $romanNumber = '';
+	    $i = 0;
+	    while($number > O)
+	    {
+	        if($number >= $basicNumbers[$i])
+	        {
+	            $number = $number - $basicNumbers[$i];
+	            $romanNumber = $romanNumber.$basicRomanNumbers[$i];
+	        }
+	        else
+	        {
+	            $i++;
+	        }
+	    }
+	    //return $romanNumber;
+	        echo "voici votre chiffre en chiffre romain :".$romanNumber;
+	}
+
+	public function convertionEnHexa($hexaConv){
+        $case1= dechex($hexaConv);
+        echo "voici la convertion en Hexadecimal de :".$case1;
+    }
+
+    public function convertionEnBin($binConv){
+        $case1= decbin($binConv);
+        echo "voici la convertion en Binaire de :".$case1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

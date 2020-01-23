@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Exercice</title>
+	<?php require "utilities.php"; $form1 = new Form(); ?>
 </head>
 <body>
 
@@ -10,15 +11,9 @@
 	<h1>Story 3</h1>
 	<form method="post">
 	<?php 
-	require "utilities.php";
-
-	$form1 = new Form();
+	
 	$form1->getInputTypeText("Nombre");
 	$form1->getSubmitButton("submit","Ok");
-
-
-
-
 	?>
 	</form>
 
@@ -27,8 +22,6 @@
 		$form1->affichePremiers($_POST["Nombre"]);
 
 	}
-
-
 	?>
 
 	<h1>Story 4</h1>
@@ -58,6 +51,61 @@
         $form1->affichePetitNombre($_POST["Croissant"]);
     }
     ?>
+
+    <h1>Story6</h1>
+    <form method="post">
+    <?php
+        $form1->getInputTypeText("roman");
+        $form1->getSubmitButton("submit","OK");
+        ?>
+    </form>
+    <?php
+        if(sizeof($_POST)>0){
+            $form1->getRomanNumber($_POST["roman"]);
+        }
+    ?>
+
+    <h1>Story 7</h1>
+	<form method="post">
+    <?php
+    $form1->getInputTypeText("Factiorielle");
+	$form1->getSubmitButton("submit","Ok");
+    ?>
+    </form>
+    <?php
+    if (sizeof($_POST)>0){
+        $form1->factor($_POST["Factiorielle"]);
+
+    }
+    ?>
+
+    <h1>Story 8</h1>
+    <form method="post">
+    <?php
+        $form1->getInputTypeText("Hexadecimal");
+        $form1->getSubmitButton("submit","OK");
+        ?>
+    </form>
+    <?php
+    if (sizeof($_POST)>0){
+        $form1->convertionEnHexa($_POST["Hexadecimal"]);
+    }
+    ?>
+
+    <h1>Story 9</h1>
+    <form method="post">
+    <?php
+        $form1->getInputTypeText("Binaire");
+        $form1->getSubmitButton("submit","OK");
+        ?>
+    </form>
+    <?php
+    if (sizeof($_POST)>0){
+        $form1->convertionEnBin($_POST["Binaire"]);
+    }
+    ?>
+
+    
 
 
 
