@@ -12,7 +12,7 @@
 		
 
 	<div>
-		<h1>Story 3</h1>
+		<h2>Story 3</h2>
 		<form method="post">
 		<?php 
 		
@@ -29,7 +29,7 @@
 	</div>
 
 	<div>
-		<h1>Story 4</h1>
+		<h2>Story 4</h2>
 		<form method="post">
 		<?php 
 
@@ -45,7 +45,7 @@
 		?>
 	</div>
 	<div>
-		<h1>Story 5</h1>
+		<h2>Story 5</h2>
 		<form method="post">
 	    <?php
 	    $form1->getInputTypeText("Croissant");
@@ -59,7 +59,7 @@
 	    ?>
 	</div>
 	<div>
-		<h1>Story6</h1>
+		<h2>Story 6</h2>
 	    <form method="post">
 	    <?php
 	        $form1->getInputTypeText("roman");
@@ -73,7 +73,7 @@
 	    ?>
 	</div>
 	<div>
-		<h1>Story 7</h1>
+		<h2>Story 7</h2>
 		<form method="post">
 	    <?php
 	    $form1->getInputTypeText("Factiorielle");
@@ -87,7 +87,7 @@
 	    ?>
 	</div>
 	<div>
-		<h1>Story 8</h1>
+		<h2>Story 8</h2>
 	    <form method="post">
 	    <?php
 	        $form1->getInputTypeText("Hexadecimal");
@@ -101,7 +101,7 @@
 	    ?>
 	</div>
 	<div>
-		<h1>Story 9</h1>
+		<h2>Story 9</h2>
 	    <form method="post">
 	    <?php
 	        $form1->getInputTypeText("Binaire");
@@ -115,7 +115,7 @@
 	    ?>
 	</div>
 	<div>
-		<h1>Story 10</h1>
+		<h2>Story 10</h2>
 	    <form method="post">
 	        <?php 
 	            $form1->getInputTypeText("email");
